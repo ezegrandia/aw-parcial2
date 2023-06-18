@@ -565,7 +565,7 @@ body {
 }
 
 .detalles-ropa {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
@@ -578,6 +578,9 @@ body {
     border: 1px solid #c7c8c9;
     border-top: none;
     box-shadow: 0 0 15px #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
 }
 
 .detalles-ropa-3,
@@ -614,13 +617,39 @@ body {
 .detalle-icono div {
     height: 15px;
     width: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .dellate-icono-carrito {
     background-image: url("../img/carrito.svg");
 }
+.container-carrito:hover .dellate-icono-carrito {
+    background-image: url("../img/carrito-hover.svg");
+}
+.detalle-icono-corazon {
+    background-image: url("../img/corazon.svg");
+}
+.container-corazon:hover .detalle-icono-corazon {
+    background-image: url("../img/corazon-hover.svg");
+}
+.detalle-icono-ojo {
+    background-image: url("../img/ojo.svg");
+}
+.container-ojo:hover .detalle-icono-ojo {
+    background-image: url("../img/ojo-hover.svg");
+}
+
+.container-carrito:active,
+.container-corazon:active,
+.container-ojo:active {
+    transform: scale(1.1);
+}
 
 .ropa-card:hover .detalles-ropa {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 @media (max-with: 1400px) {
