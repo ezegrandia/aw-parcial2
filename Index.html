@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Indumentaria</title>
+  <!-- CSS de Boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <!-- Comienzo Contenedor de la Página -->
+  <div class="container-lg">
+
+    <!-- Comienzo de la fecha -->
+    <div class="row">
+      <div class="col-12 container-fecha">
+        <p id="fecha" class="text-center">viernes, 28 de octubre de 2022</p>
+      </div>
+    </div>
+    <!-- Fin de la fecha -->
+
+    <!-- Comienzo del Header -->
+    <div class="row header-row">
+      <div class="col-md-4 container-header-item">
+        <a class="header-link">Registro</a>
+      </div>
+      <div class="col-md-4 container-header-item">
+        <a class="header-link">Iniciar sesión</a>
+      </div>
+      <div class="col-md-4 container-header-item container-header-item-carrito"> <!-- header-link-active -->
+        <div class="carrito-container">
+          <div class="carrito-icon"></div> <!-- carrito-icon-active -->
+          <a href="Index.html" class="header-link">Carrito</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del Header -->
+
+    <!-- Comienzo del Navbar -->
+    <div class="row banner">
+      <div class="col-12">
+        <!-- Comienzo del Navbar -->
+        <div class="row">
+          <div class=" col-12">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid"> <!-- d-flex flex-column flex-lg-row -->
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Menu Items -->
+                  <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-padre-link" href="#" id="hombre-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Hombre
+                      </a>
+                      <ul id="hombre-content" class="dropdown-padre-desplegable">
+                        <div class="sub-dropwdown-container">
+                          <li class="dropdown-primera-col">
+                            <a id="casual-toggle" class="dropdown-toggle">Casual</a>
+                            <ul id="casual-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Abrigos</a></li>
+                              <li><a class="dropdown-links">Deportivo</a></li>
+                              <li><a class="dropdown-links">Pantalones</a></li>
+                              <li><a class="dropdown-links">Remeras</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-segunda-col">
+                            <a id="formal-toggle" class="dropdown-toggle">Formal</a>
+                            <ul id="formal-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Chaquetas</a></li>
+                              <li><a class="dropdown-links">Camisetas</a></li>
+                              <li><a class="dropdown-links">Trajes</a></li>
+                              <li><a class="dropdown-links">Pantalones</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="oferta-container">
+                          <a>
+                            <h4>Ofertas de Invierno</h4>
+                            <p>Desde el 50% de descuento</p>
+                          </a>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-padre-link" href="#" id="mujer-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Mujer
+                      </a>
+                      <ul id="mujer-content" class="dropdown-padre-desplegable">
+                        <div class="sub-dropwdown-container">
+                          <li class="dropdown-primera-col">
+                            <a id="casual-m-toggle" class="dropdown-toggle">Casual</a>
+                            <ul id="casual-m-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Remeras</a></li>
+                              <li><a class="dropdown-links">Bikinis</a></li>
+                              <li><a class="dropdown-links">Juvenil</a></li>
+                              <li><a class="dropdown-links">Deportivo</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-segunda-col">
+                            <a id="formal-m-toggle" class="dropdown-toggle">Formal/Noche</a>
+                            <ul id="formal-m-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Vestidos</a></li>
+                              <li><a class="dropdown-links">Accesorios</a></li>
+                              <li><a class="dropdown-links">Trajes</a></li>
+                              <li><a class="dropdown-links">Nueva Temporada</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="oferta-container">
+                          <a>
+                            <h4>Ofertas de Invierno</h4>
+                            <p>Desde el 50% de descuento</p>
+                          </a>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page" href="Contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <!-- Fin Menú Items -->
+                  <!-- Inicio Búsqueda del Menú -->
+                  <form class="d-flex form-menu">
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn" type="submit"></button>
+                  </form>
+                  <!-- Fin Inicio Búsqueda del Menú -->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Fin del Navbar -->
+
+      </div>
+    </div>
+    <!-- Fin del Navbar -->
+
+    <!-- Comienzo Categoría -->
+    <div class="row categorias-row">
+      <div class="col-12 hr-container">
+        <hr>
+      </div>
+      <div class="col-12 categorias-container">
+        <a>
+          <h4>POPULAR</h4>
+        </a>
+        <a>
+          <h4>NOVEDADES</h4>
+        </a>
+        <a>
+          <h4>MÁS VENDIDOS</h4>
+        </a>
+        <a>
+          <h4>OFERTAS</h4>
+        </a>
+        <a>
+          <h4 class="ultima-categoria">MUY PRONTO</h4>
+        </a>
+      </div>
+    </div>
+    <!-- Fin de Categoría -->
+
+    <!-- Comienzo Ropa -->
+    <div class="row row-ropa-mayor">
+      <!-- Comienzo Columna Izq Ropa -->
+      <div class="col-lg-6 col-izq">
+        <!-- Comienzo Primera Row Izq (Superior) -->
+        <div class="row row-ropa-izq-sup">
+          <!-- Comienzo Card-1 -->
+          <div class="col-6 ropa-card ropa-card-1">
+            <div class="ropa-img ropa-img-1">
+              <div class="precio">$30.000</div>
+            </div>
+            <div class="pie-ropa pie-ropa-1"></div>
+            <div class="detalles-ropa detalles-ropa-1">
+              <p>Blazer de Mujer $30.000</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Card 1 -->
+          <!-- Comienzo Card-2 -->
+          <div class="col-6 ropa-card ropa-card-2">
+            <div class="ropa-img ropa-img-2">
+              <div class="precio">$17.500</div>
+            </div>
+            <div class="pie-ropa pie-ropa-2"></div>
+            <div class="detalles-ropa detalles-ropa-2">
+              <p>Jean Oxfort $17.500</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de Card-2 -->
+        </div>
+        <!-- Fin de Primera Row Izq (Superior) -->
+        <!-- Comienzo Segunda Row Izq (Inferior) -->
+        <div class="row row-ropa-izq-inf">
+          <!-- Comienzo Card-3 -->
+          <div class="col-12 ropa-card ropa-card-3">
+            <div class="ropa-img ropa-img-3">
+              <div class="precio">$6.900</div>
+            </div>
+            <div class="pie-ropa pie-ropa-3"></div>
+            <div class="detalles-ropa detalles-ropa-3">
+              <p>Remera de Hombre $6.900</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de Card-3 -->
+        </div>
+        <!-- Fin de Segunda Row Izq (Inferior) -->
+      </div>
+      <!-- Fin de Columna Izq Ropa -->
+      <!-- Comienzo Columna Der Ropa -->
+      <div class="col-lg-6 col-der">
+        <!-- Comienzo Primera Row Der (Superior) -->
+        <div class="row row-ropa-der-sup">
+          <!-- Comienzo Card-4 -->
+          <div class="col-12 ropa-card ropa-card-4">
+            <div class="ropa-img ropa-img-4">
+              <div class="precio"><span>$50.700</span> $42.900</div>
+            </div>
+            <div class="pie-ropa pie-ropa-4"></div>
+            <div class="detalles-ropa detalles-ropa-4 m-0 p-0">
+              <p>Campera de Hombre $42.900</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de Card-4 -->
+        </div>
+        <!-- Fin de Primera Row Der (Superior) -->
+        <!-- Comienzo Segunda Row Der (Inferior) -->
+        <div class="row row-ropa-der-inf">
+          <!-- Comienzo Card-5 -->
+          <div class="col-sm-6 ropa-card ropa-card-5">
+            <div class="ropa-img ropa-img-5">
+              <div class="precio">$12.000</div>
+            </div>
+            <div class="pie-ropa pie-ropa-5"></div>
+            <div class="detalles-ropa detalles-ropa-5">
+              <p>Jean Margarita $12.000</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de Card-5 -->
+          <!-- Comienzo Card-6 -->
+          <div class="col-sm-6 ropa-card ropa-card-6">
+            <div class="ropa-img ropa-img-6">
+              <div class="precio">$9.700</div>
+            </div>
+            <div class="pie-ropa pie-ropa-6"></div>
+            <div class="detalles-ropa detalles-ropa-6">
+              <p>Top de Mujer $9.700</p>
+              <div class="container-detalle-iconos">
+                <div class="detalle-icono">
+                  <div class="dellate-icono-carrito"></div>
+                </div>
+                <div class="detalle-icono">
+                  <div class="detalle-icono-corazon"></div>
+                </div>
+                <div class="detalle-icono detalle-icono-ojo">
+                  <div class="detalle-icono-ojo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de Card-6 -->
+        </div>
+        <!-- Fin de Primera Row Der (Inferior) -->
+      </div>
+      <!-- Fin de Columna Der Ropa -->
+    </div>
+    <!-- Fin de Ropa -->
+
+    <!-- Comienzo del Footer -->
+    <div class="row footer-cols-container">
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Información</a></h5>
+        <p class="footer-text-item"><a>Nosotros</a></p>
+        <p class="footer-text-item"><a>Sucursales</a></p>
+        <p class="footer-text-item"><a>Marcas</a></p>
+        <p class="footer-text-item"><a>Mapa del sitio</a></p>
+      </div>
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Porqué comprar</a></h5>
+        <p class="footer-text-item"><a>Envios internacionales</a></p>
+        <p class="footer-text-item"><a>Compras seguras</a></p>
+        <p class="footer-text-item"><a>Testimonios</a></p>
+        <p class="footer-text-item"><a>Mayoristas</a></p>
+      </div>
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Tu cuenta</a></h5>
+        <p class="footer-text-item"><a>Tus descuentos</a></p>
+        <p class="footer-text-item"><a>Seguimientos</a></p>
+        <p class="footer-text-item"><a>Favoritos</a></p>
+        <p class="footer-text-item"><a>Historial</a></p>
+      </div>
+      <div class="col-md-6 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Noticias</a></h5>
+        <p class="footer-text-item"><a>Nuevas Sucursales</a></p>
+        <p class="footer-text-item"><a>Ofertas y Descuentos</a></p>
+        <p class="footer-text-item"><a>Día de la madre</a></p>
+        <p class="footer-text-item"><a>Temporada 2022/2023</a></p>
+      </div>
+      <div class="col-md-6 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Servicios</a></h5>
+        <p class="footer-text-item"><a>Asesoramiento online</a></p>
+        <p class="footer-text-item"><a>Bolsa de trabajo</a></p>
+        <p class="footer-text-item"><a>Catálogo online</a></p>
+        <p class="footer-text-item"><a>Guardería</a></p>
+      </div>
+    </div>
+    <div class="row footer-logos-padre">
+      <div class="col-sm-6 col-md-3">
+        <a href="https://www.facebook.com/" target="_blank" class="logo-media logo-facebook"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://www.instagram.com/" target="_blank" class="logo-media logo-instagram"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://twitter.com/" target="_blank" class="logo-media logo-twitter"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://ar.pinterest.com/" target="_blank" class="logo-media logo-pinterest"></a>
+      </div>
+    </div>
+    <!-- Fin del Footer -->
+  </div>
+  <!-- Fin contenedor de la Página -->
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Fin Scripts de Bootstrap -->
+  <!-- Script Propio -->
+  <script src="js/script.js"></script>
+  <!-- Script Propio -->
+</body>
+
+</html>
