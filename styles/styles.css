@@ -58,7 +58,8 @@ body {
     color: var(--color-secundario);
 }
 .container-header-item .header-link {
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 .container-header-item:active .header-link {
     transform: scale(1.1);
@@ -84,7 +85,8 @@ body {
     background-image: url("../img/carrito-hover.svg");
 }
 .container-header-item .carrito-icon {
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 .container-header-item:last-child:active .carrito-icon {
     transform: scale(1.1);
@@ -104,11 +106,18 @@ body {
 ---------------------------------*/
 
 .banner {
-    background-image: url("../img/banner-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     height: 570px;
+}
+.banner-index {
+    background-image: url("../img/banner-bg.jpg");
+}
+.banner-contacto {
+    background-image: url("../img/banner-second.jpg");
+    /* height: 315px; */
+    background-position: center;
 }
 
 .navbar {
@@ -135,7 +144,8 @@ body {
 }
 
 .navbar .nav-item .nav-link {
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 
 .navbar .nav-item .nav-link:active {
@@ -167,7 +177,8 @@ body {
     right: 0;
     height: 100%;
     width: 36px;
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 
 .form-menu .btn:active,
@@ -194,22 +205,48 @@ body {
 }
 
 #hombre-content {
-    display: none;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 #casual-toggle-links {
-    display: none;
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 #formal-toggle-links {
-    display: none;
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 #mujer-content {
-    display: none;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 #casual-m-toggle-links {
-    display: none;
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 #formal-m-toggle-links {
-    display: none;
+    /* display: none; */
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease-in-out, visibility 0s linear 250ms;
 }
 
 .dropdown-padre-desplegable {
@@ -251,7 +288,8 @@ body {
 .dropdown-links-container .dropdown-links {
     font-weight: var(--fuente-normal);
     padding-right: 10px;
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 
 .dropdown-links-container .dropdown-links:active {
@@ -266,7 +304,7 @@ body {
 }
 
 .sub-dropwdown-container .dropdown-toggle {
-    transition: all 50ms;
+    transition: all 250ms;
 }
 
 .sub-dropwdown-container .dropdown-toggle:active {
@@ -282,6 +320,7 @@ body {
     flex-shrink: 1;
     flex-grow: 1;
     border-radius: 2px;
+    transition: all 250ms;
 }
 
 .oferta-container a {
@@ -371,7 +410,8 @@ body {
     margin: 0;
     margin-right: 34px;
     padding: 0;
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 
 .categorias-row a:hover h4 {
@@ -640,6 +680,12 @@ body {
     background-image: url("../img/ojo-hover.svg");
 }
 
+.container-carrito,
+.container-corazon,
+.container-ojo {
+    transition: all 250ms;
+}
+
 .container-carrito:active,
 .container-corazon:active,
 .container-ojo:active {
@@ -669,6 +715,97 @@ body {
     .row-ropa-der-inf {
         gap: 40px;
     }
+}
+
+/*---------------------------------
+    Sección Formulario Contacto
+---------------------------------*/
+
+#myForm1 {
+    margin-bottom: 33px;
+}
+
+.form-title h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--color-primario) !important;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.form-contacto input {
+    height: 36px;
+    border-radius: 0 !important;
+    width: 100%;
+    margin-bottom: 33px;
+    border: 1px solid #999 !important;
+}
+.form-contacto input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-contacto button {
+    height: 52px;
+    border-radius: 0 !important;
+    color: #333 !important;
+    border: 1px solid #333 !important;
+    background-color: #fff !important;
+    transition: all 250ms;
+}
+.form-contacto button:active {
+    transform: scale(1.1);
+}
+
+.btn-1 {
+    width: 106px;
+}
+.btn-2 {
+    width: 143px;
+}
+
+.row-formulario {
+    /* border: 2px solid red; */
+    padding-top: 45px;
+    padding-bottom: 17px;
+    padding-right: 97px;
+    padding-left: 97px;
+}
+@media (max-width: 768px) {
+    .row-formulario {
+        /* border: 2px solid red; */
+        padding-top: 45px;
+        padding-bottom: 17px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+.form-contacto .is-empty,
+.form-contacto .is-invalid {
+    border: 1px solid #bb5465 !important;
+    background-color: #fcf8f9 !important;
+}
+.form-contacto .is-not-empty,
+.form-contacto .is-valid {
+    border: 1px solid #54bb77 !important;
+    background-color: #f8fcf8 !important;
+}
+
+/*---------------------------------
+    Sección Reloj
+---------------------------------*/
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 17px;
 }
 
 /*---------------------------------
@@ -714,7 +851,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 
 .footer-logos-padre div .logo-media:hover {
@@ -740,7 +878,8 @@ body {
 
 .footer-col .footer-text-item {
     margin-bottom: 30px;
-    transition: all 100ms;
+    /* transition: all 100ms; */
+    transition: all 250ms;
 }
 .footer-col .footer-text-item:last-child {
     margin-bottom: 50px;

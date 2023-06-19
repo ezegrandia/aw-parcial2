@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto Tienda</title>
+  <!-- CSS de Boostrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <!-- Comienzo Contenedor de la Página -->
+  <div class="container-lg">
+
+    <!-- Comienzo de la fecha -->
+    <div class="row">
+      <div class="col-12 container-fecha">
+        <p id="fecha" class="text-center">viernes, 28 de octubre de 2022</p>
+      </div>
+    </div>
+    <!-- Fin de la fecha -->
+
+    <!-- Comienzo del Header -->
+    <div class="row header-row">
+      <div class="col-md-4 container-header-item">
+        <a class="header-link">Registro</a>
+      </div>
+      <div class="col-md-4 container-header-item">
+        <a class="header-link">Iniciar sesión</a>
+      </div>
+      <div class="col-md-4 container-header-item container-header-item-carrito"> <!-- header-link-active -->
+        <div class="carrito-container">
+          <div class="carrito-icon"></div> <!-- carrito-icon-active -->
+          <a class="header-link">Carrito</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fin del Header -->
+
+    <!-- Comienzo del Navbar -->
+    <div class="row banner banner-contacto">
+      <div class="col-12">
+        <!-- Comienzo del Navbar -->
+        <div class="row">
+          <div class=" col-12">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid"> <!-- d-flex flex-column flex-lg-row -->
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- Menu Items -->
+                  <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-padre-link" href="#" id="hombre-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Hombre
+                      </a>
+                      <ul id="hombre-content" class="dropdown-padre-desplegable">
+                        <div class="sub-dropwdown-container">
+                          <li class="dropdown-primera-col">
+                            <a id="casual-toggle" class="dropdown-toggle">Casual</a>
+                            <ul id="casual-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Abrigos</a></li>
+                              <li><a class="dropdown-links">Deportivo</a></li>
+                              <li><a class="dropdown-links">Pantalones</a></li>
+                              <li><a class="dropdown-links">Remeras</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-segunda-col">
+                            <a id="formal-toggle" class="dropdown-toggle">Formal</a>
+                            <ul id="formal-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Chaquetas</a></li>
+                              <li><a class="dropdown-links">Camisetas</a></li>
+                              <li><a class="dropdown-links">Trajes</a></li>
+                              <li><a class="dropdown-links">Pantalones</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="oferta-container">
+                          <a>
+                            <h4>Ofertas de Invierno</h4>
+                            <p>Desde el 50% de descuento</p>
+                          </a>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle dropdown-padre-link" href="#" id="mujer-toggle" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Mujer
+                      </a>
+                      <ul id="mujer-content" class="dropdown-padre-desplegable">
+                        <div class="sub-dropwdown-container">
+                          <li class="dropdown-primera-col">
+                            <a id="casual-m-toggle" class="dropdown-toggle">Casual</a>
+                            <ul id="casual-m-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Remeras</a></li>
+                              <li><a class="dropdown-links">Bikinis</a></li>
+                              <li><a class="dropdown-links">Juvenil</a></li>
+                              <li><a class="dropdown-links">Deportivo</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-segunda-col">
+                            <a id="formal-m-toggle" class="dropdown-toggle">Formal/Noche</a>
+                            <ul id="formal-m-toggle-links" class="dropdown-links-container">
+                              <li><a class="dropdown-links">Vestidos</a></li>
+                              <li><a class="dropdown-links">Accesorios</a></li>
+                              <li><a class="dropdown-links">Trajes</a></li>
+                              <li><a class="dropdown-links">Nueva Temporada</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="oferta-container">
+                          <a>
+                            <h4>Ofertas de Invierno</h4>
+                            <p>Desde el 50% de descuento</p>
+                          </a>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page" href="Index.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link no-toggle" aria-current="page" href="Contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <!-- Fin Menú Items -->
+                  <!-- Inicio Búsqueda del Menú -->
+                  <form class="d-flex form-menu">
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn" type="submit"></button>
+                  </form>
+                  <!-- Fin Inicio Búsqueda del Menú -->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Fin del Navbar -->
+
+      </div>
+    </div>
+    <!-- Fin del Navbar -->
+
+    <!-- Comienzo del Formulario -->
+    <div class="row row-formulario">
+      <div class="col-xl-6">
+        <!-- Comienzo Primer Formulario -->
+        <form id="myForm1" class="form-contacto">
+          <div class="form-title">
+            <h4>Si ya tenes registrada una cuenta con nosotros!</h4>
+          </div>
+          <div class="">
+            <input type="email" class="form-control input-email-a" id="InputEmailA" aria-describedby="emailHelp"
+              placeholder="Email">
+          </div>
+          <div class="">
+            <input type="password" class="form-control input-password-a" id="InputPasswordA" placeholder="Clave">
+          </div>
+          <button type="submit" class="btn btn-primary btn-1">INGRESAR</button>
+        </form>
+        <!-- Fin de Primer Formulario -->
+      </div>
+      <div class="col-xl-6">
+        <!-- Comienzo Segundo Formulario -->
+        <form id="myForm2" class="form-contacto">
+          <div class="form-title">
+            <h4>Si sos un usuario nuevo!</h4>
+          </div>
+          <div class="">
+            <input type="email" class="form-control input-email-b" id="InputEmailB" aria-describedby="emailHelp"
+              placeholder="Email">
+          </div>
+          <div class="">
+            <input type="password" class="form-control input-password-b" id="InputPasswordB" placeholder="Clave">
+          </div>
+          <div class="">
+            <input type="password" class="form-control input-password-b-2" id="InputPasswordB2"
+              placeholder="Confirma tu clave">
+          </div>
+          <button type="submit" class="btn btn-primary btn-2">CREAR CUENTA</button>
+        </form>
+        <!-- Fin de Segundo Formulario -->
+      </div>
+    </div>
+    <!-- Fin del Formulario -->
+
+    <!-- Comienzo del Reloj -->
+    <div class="row">
+      <div class="col-12">
+        <div id="clock"></div>
+      </div>
+    </div>
+    <!-- Fin del Reloj -->
+
+    <!-- Comienzo del Footer -->
+    <div class="row footer-cols-container">
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Información</a></h5>
+        <p class="footer-text-item"><a>Nosotros</a></p>
+        <p class="footer-text-item"><a>Sucursales</a></p>
+        <p class="footer-text-item"><a>Marcas</a></p>
+        <p class="footer-text-item"><a>Mapa del sitio</a></p>
+      </div>
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Porqué comprar</a></h5>
+        <p class="footer-text-item"><a>Envios internacionales</a></p>
+        <p class="footer-text-item"><a>Compras seguras</a></p>
+        <p class="footer-text-item"><a>Testimonios</a></p>
+        <p class="footer-text-item"><a>Mayoristas</a></p>
+      </div>
+      <div class="col-md-4 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Tu cuenta</a></h5>
+        <p class="footer-text-item"><a>Tus descuentos</a></p>
+        <p class="footer-text-item"><a>Seguimientos</a></p>
+        <p class="footer-text-item"><a>Favoritos</a></p>
+        <p class="footer-text-item"><a>Historial</a></p>
+      </div>
+      <div class="col-md-6 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Noticias</a></h5>
+        <p class="footer-text-item"><a>Nuevas Sucursales</a></p>
+        <p class="footer-text-item"><a>Ofertas y Descuentos</a></p>
+        <p class="footer-text-item"><a>Día de la madre</a></p>
+        <p class="footer-text-item"><a>Temporada 2022/2023</a></p>
+      </div>
+      <div class="col-md-6 text-center text-lg-start col-lg footer-col">
+        <h5 class="footer-text-item"><a>Servicios</a></h5>
+        <p class="footer-text-item"><a>Asesoramiento online</a></p>
+        <p class="footer-text-item"><a>Bolsa de trabajo</a></p>
+        <p class="footer-text-item"><a>Catálogo online</a></p>
+        <p class="footer-text-item"><a>Guardería</a></p>
+      </div>
+    </div>
+    <div class="row footer-logos-padre">
+      <div class="col-sm-6 col-md-3">
+        <a href="https://www.facebook.com/" target="_blank" class="logo-media logo-facebook"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://www.instagram.com/" target="_blank" class="logo-media logo-instagram"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://twitter.com/" target="_blank" class="logo-media logo-twitter"></a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="https://ar.pinterest.com/" target="_blank" class="logo-media logo-pinterest"></a>
+      </div>
+    </div>
+    <!-- Fin del Footer -->
+  </div>
+  <!-- Fin contenedor de la Página -->
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Fin Scripts de Bootstrap -->
+  <!-- Script Propio -->
+  <script src="js/script.js"></script>
+  <!-- Script Propio -->
+</body>
+
+</html>
